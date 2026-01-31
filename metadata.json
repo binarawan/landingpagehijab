@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Hijab Prelove Premium Landing Page",
+  "description": "A modern, feminine, and high-converting landing page for premium preloved hijab packages, optimized for mobile-first experience and WhatsApp conversion, with a Supabase-powered admin panel.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
