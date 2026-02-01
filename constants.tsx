@@ -1,56 +1,126 @@
 
 import React from 'react';
-import { CheckCircle, Gift, Flame, Star, ShoppingBag, Package, Heart, Users, MessageCircle } from 'lucide-react';
+import { CheckCircle, Gift, Flame, Star, ShoppingBag, Package, Heart, Users, MessageCircle, TrendingUp, Moon, Zap, Clock } from 'lucide-react';
 
 export const DEFAULT_SITE_DATA = {
   whatsapp_number: "6281234567890",
-  whatsapp_message: "Halo Admin, saya mau pesan Paket Hijab Prelove Premium ✨\n\nMau paket: ",
-  hero_title: "🌸 HIJAB PRELOVE PREMIUM SALE 🌸",
-  hero_subtitle: "Modal Kecil • Untung Melimpah • Siap Jual Lagi!",
-  hero_promo_text: "Lagi cari hijab cantik harga super miring buat usaha atau dipakai sendiri? Ini jawabannya 💖",
-  price_text: "HANYA 35 RIBU",
-  package_detail: "DAPAT 6 PCS HIJAB + FREE POUCH",
-  benefits: [
-    "Hijab PRELOVE PREMIUM (bukan kaleng-kaleng)",
-    "Kondisi layak pakai & cantik-cantik",
-    "Sudah lolos seleksi sebelum dikirim",
-    "Cocok untuk jual ulang & dipakai sendiri"
+  whatsapp_message: "Halo Admin, saya mau pesan HIJAB 5 RIBUAN - DEAL RAMADHAN ✨\n\nSaya tertarik dengan paket: ",
+  
+  // HOOK UTAMA
+  hero_title: "Hijab 5 Ribuan!",
+  hero_subtitle: "Modal kecil, untung maksimal jelang Ramadhan 💸",
+  hero_promo_text: "👉 50 Ribu Dapet 10 Pcs Hijab Premium!",
+  
+  // SUB HEADLINE
+  sub_headline_desc: "Hijab random warna cantik, bahan premium, cocok buat jual lagi, hampers, atau stok dagangan Ramadhan.",
+  
+  // PRODUCT INFO
+  product_hook_title: "🧕 HIJAB RANDOM PREMIUM – DEAL RAMADHAN",
+  product_hook_desc: "Lagi cari produk cepat laku, modal ringan, dan margin gede buat Ramadhan? Ini jawabannya 👇 Kami hadirkan Hijab Random Premium. Harga super hemat, kualitas tetap juara.",
+  
+  product_images: [
+    { url: "https://images.unsplash.com/photo-1583391262775-9a288f70152d?q=80&w=800&auto=format&fit=crop", caption: "Bahan Bella Square Premium" },
+    { url: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop", caption: "Warna-warna Soft & Marketable" }
   ],
-  package_contents: [
-    "6 pcs hijab pilihan",
-    "FREE pouch hijab cantik"
+
+  // DETAIL PRODUK
+  package_details: [
+    "Jenis: Hijab / Kerudung Random",
+    "Bahan: Bella Square Premium",
+    "Ukuran: 115 x 115 cm",
+    "Warna: Random (Campur warna cantik)",
+    "Kondisi: Baru & layak jual",
+    "Target: Reseller, dropship, jualan online/offline"
   ],
-  package_types: [
-    "Pasmina",
-    "Hijab instan bergo hujan syar’i",
-    "Segi empat",
-    "Segi empat polos",
-    "Segi empat motif"
+  product_warning: "⚠️ Karena harga promo, warna dikirim random. Tapi tenang, semua warna soft & marketable.",
+
+  // PROFIT CALCULATOR
+  profit_title: "💰 KENAPA INI CUAN BANGET?",
+  profit_points: [
+    "🔥 Modal kecil",
+    "🔥 Harga jual pasaran 10–15 ribu / pcs",
+    "🔥 Bisa dijual satuan, bundling, atau paket Ramadhan",
+    "🔥 Produk fast moving jelang puasa & lebaran"
   ],
+  profit_calc_modal: "5.000",
+  profit_calc_jual: "12.000",
+
+  // RAMADHAN CONTEXT
+  ramadhan_title: "🌙 RAMADHAN = MOMEN EMAS JUALAN HIJAB",
+  ramadhan_points: [
+    "✨ Orang cari hijab baru",
+    "✨ Persiapan lebaran",
+    "✨ Bikin hampers",
+    "✨ Jualan dadakan tapi laku keras"
+  ],
+  ramadhan_footer_note: "👉 Hijab selalu dicari, dipakai, dan dibeli ulang",
+
+  // PRICING
+  pricing_title: "📦 PILIHAN PAKET",
+  pricing_tiers: [
+    { label: "PAKET HEMAT", quantity: "10 pcs", price: "Rp 50.000" },
+    { label: "PAKET RESELLER", quantity: "20 pcs", price: "Rp 95.000" },
+    { label: "PAKET GROSIR", quantity: "50 pcs", price: "Rp 200.000" }
+  ],
+
+  // TARGET AUDIENCE
+  target_audience_title: "🚀 COCOK UNTUK:",
+  target_audience: [
+    "✔ Reseller pemula",
+    "✔ Ibu rumah tangga",
+    "✔ Jualan live",
+    "✔ Jualan online (WA, Shopee, IG)",
+    "✔ Persiapan stok Ramadhan & Lebaran"
+  ],
+
+  // TESTIMONIALS
   testimonials: [
     {
       name: "Rina",
-      city: "Bogor",
-      comment: "MasyaAllah kak, hijabnya bagus-bagus semua 😍 Padahal random tapi gak ada yang zonk. Langsung aku jual lagi, sehari laku 4 pcs. Next order lagi ya kak 🙏",
+      city: "Reseller Hijab",
+      comment: "MasyaAllah, kualitasnya bagus banget! Awalnya ragu karena murah, ternyata bahannya halus, jahitan rapi. Warna random tapi cantik-cantik semua. Fix repeat order 😍",
       stars: 5
     },
     {
       name: "Siti",
-      city: "Bekasi",
-      comment: "Awalnya ragu karena random, ternyata datangnya premium semua 😭✨ Warnanya aman, modelnya kepake banget. Free pouchnya juga lucu!",
+      city: "Online Seller",
+      comment: "Harga segini tapi premium! Serius ini hijab 5 ribuan rasanya gak masuk akal. Dijual lagi cepat banget laku. Cocok buat stok Ramadhan.",
+      stars: 5
+    },
+    {
+      name: "Maya",
+      city: "Host Live",
+      comment: "Laku keras di live! Saya jual di live 12–15 ribu, langsung habis. Pembeli gak komplain sama sekali. Warna-warnanya aman buat semua umur.",
+      stars: 5
+    },
+    {
+      name: "Novi",
+      city: "Pemula Reseller",
+      comment: "Cocok buat pemula jualan. Modal kecil tapi hasilnya nyata. Saya baru mulai jualan dan ini produk pertama yang bikin balik modal cepat.",
+      stars: 5
+    },
+    {
+      name: "Aisyah",
+      city: "Seller Offline",
+      comment: "Beneran random tapi cakep. Takut dapet warna aneh, ternyata semua soft & marketable. Bisa langsung jual tanpa sortir.",
       stars: 5
     }
-  ]
+  ],
+
+  // FINAL CTA
+  cta_title: "🔥 Stok terbatas!",
+  cta_subtitle: "🔥 Harga bisa naik mendekati Ramadhan",
+  cta_button_text: "Amankan stok hijab 5 ribuan kamu sekarang!",
+  cta_footer: "📲 Klik pesan sekarang sebelum kehabisan"
 };
 
 export const ICONS = {
   Check: <CheckCircle className="text-pink-500 w-5 h-5" />,
-  Gift: <Gift className="text-pink-500 w-5 h-5" />,
-  Fire: <Flame className="text-orange-500 w-5 h-5" />,
-  Star: <Star className="text-yellow-400 fill-current w-5 h-5" />,
-  Bag: <ShoppingBag className="w-5 h-5" />,
-  Package: <Package className="w-5 h-5" />,
-  Heart: <Heart className="w-5 h-5" />,
-  Users: <Users className="w-5 h-5" />,
-  WhatsApp: <MessageCircle className="w-6 h-6" />
+  Star: <Star className="text-yellow-400 fill-current w-4 h-4" />,
+  Flame: <Flame className="text-orange-500 w-5 h-5" />,
+  Moon: <Moon className="text-indigo-400 w-5 h-5" />,
+  Trending: <TrendingUp className="text-green-500 w-5 h-5" />,
+  WhatsApp: <MessageCircle className="w-6 h-6" />,
+  Zap: <Zap className="text-yellow-400 w-5 h-5" />,
+  Clock: <Clock className="text-gray-400 w-5 h-5" />
 };

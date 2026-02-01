@@ -15,3 +15,8 @@ export interface PackageType {
   name: string;
   icon: string;
 }
+
+export interface GalleryImage {
+  url: string;
+  caption: string;
+}
